@@ -8,7 +8,7 @@ public class WhackString {
     //constructor
     public WhackString () {
         whackString = "";
-        index = (int)(Math.random() * 5 + 1);
+        index = (int)(Math.random() * 5);
     }
 
     //creates a String with a random mole
