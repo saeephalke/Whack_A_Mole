@@ -11,19 +11,21 @@ public class PlayGame{
     Print the points from the second class
   */
   private Scanner scan;
-  private Timer timer;
+  //private Timer timer;
   private Board board;
 
   public PlayGame(){
     scan = new Scanner(System.in);
-    timer = new Timer();
+    //timer = new Timer();
     board = new Board(); //will be changed based on code added
   }
 
+  /* 
   public class Task extends TimerTask {
     public void run(){
       //to be filled later
     }
   }
+  */
 }
   
