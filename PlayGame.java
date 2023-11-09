@@ -20,6 +20,14 @@ public class PlayGame{
     board = new Board(); //will be changed based on code added
   }
 
+  public void playGame(){
+    long start = System.currentTimeMillis();
+    long end =  start + 30 * 1000;
+
+    while (System.currentTimeMillis() < end && board.method()) {
+    // operations to play the game, waiting on board class to complete
+    }
+
   /* 
   public class Task extends TimerTask {
     public void run(){
