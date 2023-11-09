@@ -28,4 +28,8 @@ public class WhackString {
     public int getIndex(){
         return index;
     }
+
+    public String getWhackString() {
+        return whackString;
+    }
 }
