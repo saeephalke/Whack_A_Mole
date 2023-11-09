@@ -24,4 +24,8 @@ public class WhackString {
       return whackString;
 
   }
+
+    public int getIndex(){
+        return index;
+    }
 }
