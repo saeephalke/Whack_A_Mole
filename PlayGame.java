@@ -26,8 +26,9 @@ public class PlayGame{
 
     while (System.currentTimeMillis() < end && board.getMissCounter() < 3) {
     // operations to play the game, waiting on board class to complete
-      System.out.println(board.getWhackObj().getWhackString());
+      System.out.println("Score: " + board.getScore() + "Misses: " + board.getMissCounter());
       System.out.println("Enter a number between 1-5 to whack the mole!");
+      System.out.println(board.getWhackObj().getWhackString());
       int guess = scan.nextInt();
       board.addPoints(guess - 1);
       board.getWhackObj().randomIndex();
