@@ -9,10 +9,12 @@ public class WhackString {
     public WhackString () {
         whackString = "";
         index = (int)(Math.random() * 5);
+        whackString = createString();
     }
 
     //creates a String with a random mole
     public String createString () {
+        whackString = "";
       for (int i = 0; i < 5; i++) {
           if (i != index) {
               whackString += "-";

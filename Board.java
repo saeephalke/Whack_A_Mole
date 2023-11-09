@@ -7,7 +7,14 @@ public class Board {
     private int missCounter;
     // Scanner scan = new Scanner(System.in);
 
-public boolean compareIndexValues(int index) {
+    public Board(){
+        score = 0;
+        whackObj = new WhackString();
+        missCounter = 0;
+    }
+    
+    
+    public boolean compareIndexValues(int index) {
     //int userIndex = scan.nextInt();
     int correctIndex = whackObj.getIndex();
     if(index == correctIndex){
@@ -34,7 +41,7 @@ public int getMissCounter() {
     return missCounter;
 }
 
-public String getWhackObj() {
+public WhackString getWhackObj() {
         return whackObj;
 }
 }
