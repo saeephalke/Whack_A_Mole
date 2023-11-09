@@ -30,9 +30,19 @@ public class PlayGame{
       System.out.println("Enter a number between 1-5 to whack the mole!");
       System.out.println(board.getWhackObj().getWhackString());
       int guess = scan.nextInt();
-      board.addPoints(guess - 1);
-      board.getWhackObj().randomIndex();
-      board.getWhackObj().createString();
+      
+      while (guess < 1 || guess > 5) {
+        System.out.println("Sorry that index is illegal! Enter a number between 1-5");
+        System.out.println("For doing this, we're adding to your miss counter mwahahahaha!");
+        board.setMissCounter(board.getMissCounter() + 1);
+        System.out.println("Your miss counter is now " + board.getMissCounter());
+        guess = scan.nextInt();
+      }
+        
+        board.addPoints(guess - 1);
+        board.getWhackObj().randomIndex();
+        board.getWhackObj().createString();
+    
     }
 
     System.out.println("Game over! Here is your score " + board.getScore());
