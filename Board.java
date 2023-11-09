@@ -16,8 +16,8 @@ public boolean compareIndexValues(int index) {
     return false;
 }
 
-public void addPoints() {
-  if (compareIndexValues()) {
+public void addPoints(int points) {
+  if (compareIndexValues(points)) {
       score++;
       missCounter = 0;
   } else {
