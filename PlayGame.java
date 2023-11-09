@@ -24,9 +24,16 @@ public class PlayGame{
     long start = System.currentTimeMillis();
     long end =  start + 30 * 1000;
 
-    while (System.currentTimeMillis() < end && board.method()) {
+    while (System.currentTimeMillis() < end && board.getMissCounter() < 3) {
     // operations to play the game, waiting on board class to complete
+      System.out.println(board.getWhackObj().getWhackString());
+      System.out.println("Enter a number between 1-5 to whack the mole!"):
+      int guess = scan.nextInt();
+      board.addPoints(guess - 1);
     }
+
+    System.out.println("Game over! Here is your score " + board.getScore());
+  }
 
   /* 
   public class Task extends TimerTask {
