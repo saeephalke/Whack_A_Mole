@@ -32,4 +32,8 @@ public class WhackString {
     public String getWhackString() {
         return whackString;
     }
+
+    public void randomIndex() {
+         index = (int)(Math.random() * 5);
+    }
 }
