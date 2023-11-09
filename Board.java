@@ -44,4 +44,8 @@ public int getMissCounter() {
 public WhackString getWhackObj() {
         return whackObj;
 }
+
+public void setMissCounter(int miss) {
+      missCounter = miss;
+}
 }
