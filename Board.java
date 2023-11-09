@@ -1,20 +1,23 @@
-// not done yet!!
 public class Board {
-        
+
+ // instance variables       
     private int score;
     private WhackString whackObj;
     private int missCounter;
-    // Scanner scan = new Scanner(System.in);
 
-    public Board(){
+// default constructor
+    public Board() {
         score = 0;
         whackObj = new WhackString();
         missCounter = 0;
     }
     
-    
+/**
+* checks if the user input equals the correct mole position
+* @param index - user-inputted number
+* @return true if the user input equals the correct mole position, false otherwise
+*/
     public boolean compareIndexValues(int index) {
-    //int userIndex = scan.nextInt();
     int correctIndex = whackObj.getIndex();
     if(index == correctIndex){
         return true;
@@ -22,6 +25,10 @@ public class Board {
     return false;
 }
 
+/**
+* adds the total points that the user scored
+* @param points - points to be added to total score
+*/
 public void addPoints(int points) {
   if (compareIndexValues(points)) {
       score++;
@@ -32,18 +39,34 @@ public void addPoints(int points) {
 
 }
 
+/**
+* gets the current score
+* @return current score
+*/
 public int getScore() {
     return score;
 }
 
+/**
+* gets the current number of misses
+* @return current number of misses
+*/
 public int getMissCounter() {
     return missCounter;
 }
 
+/**
+* gets the current whackObj
+* @return current whackObj
+*/
 public WhackString getWhackObj() {
         return whackObj;
 }
 
+/**
+* sets the missCounter to the number of current misses
+* @param miss - number of current misses
+*/
 public void setMissCounter(int miss) {
       missCounter = miss;
 }
