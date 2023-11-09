@@ -1,5 +1,4 @@
 // not done yet!!
-import java.util.Scanner;  
 public class Board {
         
     private int score;
