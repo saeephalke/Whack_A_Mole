@@ -30,8 +30,11 @@ public int getScore() {
     return score;
 }
 
-
 public int getMissCounter() {
     return missCounter;
+}
+
+public String getWhackObj() {
+        return whackObj;
 }
 }
