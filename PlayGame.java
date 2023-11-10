@@ -14,12 +14,18 @@ public class PlayGame{
   //private Timer timer;
   private Board board;
 
+  /**
+   * Default constructor, sets the scan instance variable to a new scanner object, and the board instance variable to a new board
+   */
   public PlayGame(){
     scan = new Scanner(System.in);
     //timer = new Timer();
     board = new Board(); //will be changed based on code added
   }
 
+  /**
+   * Runs the entire game using user input and methods in the Board class
+   */
   public void playGame(){
     long start = System.currentTimeMillis();
     long end =  start + 30 * 1000;

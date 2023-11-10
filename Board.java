@@ -6,6 +6,9 @@ public class Board {
     private int missCounter;
 
 // default constructor
+/**
+ * default constructor that initializes the score and missCounter instance variables to 0, and creates a new whackstring object for the whackObj instance variable
+ */
     public Board() {
         score = 0;
         whackObj = new WhackString();
