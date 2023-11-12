@@ -1,3 +1,8 @@
+/**
+* Name: Driver Class
+* Objects of this class play and start the game
+* 
+*/
 public class Driver {
     /**
      * runs the play game method to play and start the game
