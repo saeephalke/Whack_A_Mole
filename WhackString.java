@@ -24,8 +24,8 @@ public class WhackString {
 
     //creates a String with a random mole
     /**
-     * Generates a whackstring which is composed of four dashes and a $ symbol
-     * the $ symbol has an index of "index"
+     * Generates a whackstring composed of four dashes and a $ symbol
+     * the $ symbol has an index of the instance variable "index"
      * @return a newly generated whackstring
      */
     public String createString () {
