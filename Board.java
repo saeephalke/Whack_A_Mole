@@ -18,6 +18,7 @@ public class Board {
     
 /**
 * checks if the user input equals the correct mole position
+* Pre-condition: index is a positive number and correctIndex is a number from 1-5
 * @param index - user-inputted number
 * @return true if the user input equals the correct mole position, false otherwise
 */
@@ -31,6 +32,7 @@ public class Board {
 
 /**
 * adds the total points that the user scored
+* Pre-condition: points is not negative
 * @param points - points to be added to total score
 */
 public void addPoints(int points) {
@@ -45,6 +47,7 @@ public void addPoints(int points) {
 
 /**
 * gets the current score
+* Pre-condition: score os not negative
 * @return current score
 */
 public int getScore() {
@@ -53,6 +56,7 @@ public int getScore() {
 
 /**
 * gets the current number of misses
+* Pre-condition: missCounter is not negative
 * @return current number of misses
 */
 public int getMissCounter() {
@@ -69,6 +73,7 @@ public WhackString getWhackObj() {
 
 /**
 * sets the missCounter to the number of current misses
+* Pre-condition: miss and missCounter are not negative
 * @param miss - number of current misses
 */
 public void setMissCounter(int miss) {
