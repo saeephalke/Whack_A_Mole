@@ -1,3 +1,8 @@
+/**
+* Name: Board Class
+* Objects of this class contain score tracker, miss counter, and a whackObject
+* 
+*/
 public class Board {
 
  /**
