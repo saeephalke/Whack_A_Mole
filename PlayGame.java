@@ -1,4 +1,9 @@
 import java.util.*;
+/**
+* Name: PlayGame Class
+* Objects of this class contain a board object and scanner
+* 
+*/
 public class PlayGame{
   /*3. Playing class
     import Timer class
