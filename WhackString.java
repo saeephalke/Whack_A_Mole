@@ -1,5 +1,10 @@
+/**
+* Name: WhackString Class
+* Objects of this class contain a five-character String with a mole at a randomly-chosen index
+* 
+*/
+
 public class WhackString {
-//Prints out a String with a random mole 
 
     //instance variables
     private String whackString;
@@ -7,7 +12,9 @@ public class WhackString {
     
     //constructor
     /**
-     * default constructor, initializes index to a random number from 1-5, and generates random whackstring
+     * default constructor
+     * initializes index to a random number from 1-5
+     * initializes whackString to an empty String
      */
     public WhackString () {
         whackString = "";
@@ -17,7 +24,8 @@ public class WhackString {
 
     //creates a String with a random mole
     /**
-     * Generates a whackstring which is composed of four dashes, and a $ symbol
+     * Generates a whackstring which is composed of four dashes and a $ symbol
+     * the $ symbol has an index of "index"
      * @return a newly generated whackstring
      */
     public String createString () {
@@ -36,7 +44,7 @@ public class WhackString {
 
   /**
    * returns the value of the index instance variable
-   * @return the wackstring's stored index value
+   * @return the whackString's stored index value
    */
 
     public int getIndex(){
