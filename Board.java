@@ -1,11 +1,12 @@
 public class Board {
 
- // instance variables       
+ /**
+ * instance variables
+ */
     private int score;
     private WhackString whackObj;
     private int missCounter;
 
-// default constructor
 /**
  * default constructor that initializes the score and missCounter instance variables to 0, and creates a new whackstring object for the whackObj instance variable
  */
@@ -20,7 +21,7 @@ public class Board {
 * @param index - user-inputted number
 * @return true if the user input equals the correct mole position, false otherwise
 */
-    public boolean compareIndexValues(int index) {
+ public boolean compareIndexValues(int index) {
     int correctIndex = whackObj.getIndex();
     if(index == correctIndex){
         return true;
