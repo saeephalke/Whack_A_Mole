@@ -1,0 +1,56 @@
+/* Names: Christina Huang, Isha Vyas, Felicia Chiu, Saee Phalke
+This game is Whack-a-mole. In this game,  
+*/
+
+
+
+-two classes other than the driver class
+1. Prints out the String with the mole in it
+    private String whackString = "";
+    private int index;
+    index = (int)(Math.random() * 5 + 1);
+
+    public String createString () {
+      for (i = 0; i < 5; i++) {
+          if (i != index) {
+              String += "-";
+          }
+          else {
+              String += "$";
+          }
+      }
+      return String;
+
+  }
+
+2. Gets the number and checks to see if the mole is correct
+   private int score;
+   private WhackString object;
+   private int missCounter;
+
+  -compares the index values
+
+
+  -adds the points
+    if (compareIndexValues) {
+      score++;
+      missCounter = 0;
+    }
+    else {
+      misscounter++;
+    }
+
+  -if incorrect 3 times then game over
+
+
+3. WhackPlay()
+    import Timer class
+    /* Comments about the Timer class */
+
+    while (less than time limit && !(gameOver)) {
+      user input
+      PlayGame
+    }
+    Print the points from the second class
+
+4. Driver class (ofc)
